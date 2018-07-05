@@ -1,0 +1,12 @@
+/**
+  * Style for the insert page's front end.
+  */
+
+.content {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: auto;
+}

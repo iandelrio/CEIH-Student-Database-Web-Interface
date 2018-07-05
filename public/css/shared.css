@@ -1,0 +1,95 @@
+/**
+  * Styles shared across all pages
+  */
+
+body, html {
+    height: 100%;
+}
+
+.bg {
+    height: 100%;
+    background: url(../bg/IRSHDCprog.jpg) no-repeat center;
+    background-size: cover;
+    filter: blur(5px);
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 90px;
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    text-align: center;
+}
+
+h2 {
+    font-size: 60px;
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    text-align: center;
+    font-family: 'Cinzel Decorative', Georgia, serif;
+}
+
+form {
+    background: #FFFFFF;
+    border: 2px solid darkslategray;
+    border-radius: 4px;
+    width: fit-content;
+    /*max-width: 400px;*/
+    margin: 0 auto 100px;
+    padding: 20px;
+}
+
+/*
+form input {
+    font-family: Georgia, serif;
+    background: #f2f2f2;
+    width: 100%;
+    border: 2px solid darkslategray;
+    border-radius: 4px;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+form button {
+    font-family: Georgia, serif;
+    background-color: #FFFFFF;
+    color: #555555;
+    border: 2px solid darkslategray;
+    border-radius: 4px;
+    padding: 12px 28px;
+    text-align: center;
+    display: inline-block;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    width: 100%;
+}
+*/
+
+form button {
+    font-family: Georgia, serif;
+    background: #f2f2f2;
+    width: 100%;
+    border: 2px solid darkslategray;
+    border-radius: 4px;
+    margin: 40px 0 0 0;
+    padding: 15px;
+    box-sizing: border-box;
+    transition-duration: 0.2s;
+}
+
+form button:hover {
+    background-color: darkslategray;
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    height: 100%;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    color: black;
+}

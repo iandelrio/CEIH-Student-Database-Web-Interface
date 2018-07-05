@@ -1,0 +1,56 @@
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 5px;
+    border-bottom: 1px solid #aaa;
+}
+
+/*form {*/
+    /*background: #FFFFFF;*/
+    /*border: 2px solid #266D12;*/
+    /*border-radius: 4px;*/
+    /*max-width: 400px;*/
+    /*margin: 0 auto 100px;*/
+    /*padding: 45px;*/
+/*}*/
+
+/*form input {*/
+    /*font-family: Georgia, serif;*/
+    /*background: #f2f2f2;*/
+    /*width: 100%;*/
+    /*border: 2px solid #266D12;*/
+    /*border-radius: 4px;*/
+    /*margin: 0 0 15px;*/
+    /*padding: 15px;*/
+    /*box-sizing: border-box;*/
+/*}*/
+
+/*form button {*/
+    /*font-family: Georgia, serif;*/
+    /*background-color: #FFFFFF;*/
+    /*color: #555555;*/
+    /*border: 2px solid #266D12;*/
+    /*border-radius: 4px;*/
+    /*padding: 12px 28px;*/
+    /*text-align: center;*/
+    /*display: inline-block;*/
+    /*-webkit-transition-duration: 0.4s;*/
+    /*transition-duration: 0.4s;*/
+    /*width: 100%;*/
+
+/*}*/
+
+form button:hover {
+    background-color: #318A17;
+    color: #FFFFFF;
+}
+
+a {
+    font-family: Georgia, serif;
+    text-decoration: none;
+}

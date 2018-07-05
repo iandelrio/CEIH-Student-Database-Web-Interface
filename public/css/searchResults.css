@@ -1,0 +1,18 @@
+/**
+  * Style for the search results' page.
+  */
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+}
+
+th, tr, td {
+    height: 35px;
+    width: 7%;
+    text-align: left;
+}
+
+tr:hover {
+    background-color: #dcdcdc;
+}
