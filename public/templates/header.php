@@ -3,6 +3,12 @@
 
 <!-- HTML and CSS for the header bar that navigates back to the home page. -->
 
+<head>
+    <title> Header </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
 <style>
     a:link, a:visited {
         font-family: Georgia, serif;
@@ -18,16 +24,6 @@
         color: white;
     }
 </style>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="../css/style.css">
-</head>
 
 <body>
 

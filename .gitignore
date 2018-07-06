@@ -1,6 +1,6 @@
 # Student information
 *.csv
-#public/data
+public/data
 .idea
 
 # Windows thumbnail cache files
