@@ -1,0 +1,50 @@
+/**
+  * Style for the search page's front end.
+  */
+.content {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: auto;
+}
+
+/* Hide all steps by default: */
+.tab {
+    display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+
+/* Mark the active step: */
+.step.active {
+    opacity: 1;
+    background-color: #609f9f;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #609f9f;
+}
+
+form {
+    width: 40%;
+    /*height: 300px;*/
+    min-width: 300px;
+}
+
+form button {
+    width: 100px;
+}
