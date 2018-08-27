@@ -17,6 +17,17 @@ body, html {
     z-index: -1;
 }
 
+/*
+Refactor and leave just set top in non-shared css files? Removes duplication
+.content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: auto;
+}
+*/
+
 h1 {
     font-size: 90px;
     color: white;

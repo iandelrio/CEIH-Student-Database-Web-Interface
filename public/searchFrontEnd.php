@@ -42,8 +42,9 @@
                     Select filter(s) (optional).
                 </p>
 
-                <div id="filterlist">
-                    <select name="filters1" id="filters1" title="Filters">
+                <div id="fltrList0">
+                    <!-- TODO: find difference between name and title, get rid of anything unnecessary -->
+                    <select name="fltr0" id="fltr0" title="Filters">
                         <option value="" hidden>Select Filter...</option>
                         <option value="studentNumber" class="applications awards enrollment graduation student"> Student
                             Number
@@ -112,7 +113,7 @@
 
                     <br>
                 </div>
-                <input id="addfltrbutton" type="button" value="Add filter" onclick="addFilter()">
+                <input id="addFltrBtn" type="button" value="Add filter" onclick="addFilter()">
             </div>
 
             <div class="tab">
