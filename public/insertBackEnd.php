@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
     require "../common.php";
 
     try {
-        $file_name  = $file = str_replace("\\", "/", $_FILES["fileToInsert"]["tmp_name"]);
+        $file_name  = str_replace("\\", "/", $_FILES["fileToInsert"]["tmp_name"]);
         $table_name = $_POST["tableName"];
         $connection = new PDO($dsn, $username, $password, $options);
 

@@ -28,7 +28,7 @@
                 <p>
                     Select tables to search over (select at least one table).
                 </p>
-                <div class="checkbox-group required">
+                <div class="checkbox-group">
                     <label><input type="checkbox" name="table" value="applications"> Applications</label> <br>
                     <label> <input type="checkbox" name="table" value="awards"> Awards</label> <br>
                     <label> <input type="checkbox" name="table" value="enrollment"> Enrollment</label> <br>
@@ -95,7 +95,6 @@
                         <option value="firstSessionApplied" class="student"> First Session Applied</option>
                         <option value="firstSessionAdmitted" class="student"> First Session Admitted</option>
                         <option value="firstSessionRegistered" class="student"> First Session Registered</option>
-                        <!-- TODO: Make depend on selected table(s). -->
                     </select>
 
                     <select name="comparisonOp" id="comparisonOp" title="Comparison Operator">
@@ -107,13 +106,14 @@
                         <!-- TODO: Make depend on data type of selected filter. -->
                     </select>
 
-                    <input type="text" id="filterinput" placeholder="eg. Session = 2016W1"
+                    <input type="text" id="fltrIn0" placeholder="eg. Session = 2016W1"
                            autocomplete="off">
                     <!-- TODO: Type checking based on selected attribute -->
 
                     <br>
                 </div>
                 <input id="addFltrBtn" type="button" value="Add filter" onclick="addFilter()">
+                <input id="clrFltrBtn" type="button" value="Clear filters" onclick="clearFilters()">
             </div>
 
             <div class="tab">
@@ -121,12 +121,12 @@
                     Select columns to display.
                 </p>
                 <label><input type="radio" name="column_display" value="*" checked> All</label> <br>
-                <label><input type="radio" name="column_display" value="TODO"> Select columns (hold down CTRL or CMD key
+                <label><input type="radio" name="column_display" value="TODO" disabled> Select columns (hold down CTRL or CMD
                     to select multiple columns)</label>
 
                 <br>
 
-                <select name="columnsToShow" id="columnsToShow" title="Columns To Show" multiple>
+                <select name="columnsToShow" id="columnsToShow" title="Columns To Show" multiple style='overflow:hidden'>
                     <option value="" hidden>Select Filter...</option>
                     <option value="studentNumber" class="applications awards enrollment graduation student"> Student
                         Number
