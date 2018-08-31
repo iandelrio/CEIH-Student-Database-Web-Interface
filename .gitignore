@@ -1,5 +1,6 @@
 # Student information
 *.csv
+data
 public/data
 .idea
 

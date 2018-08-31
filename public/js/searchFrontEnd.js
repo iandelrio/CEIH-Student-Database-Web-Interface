@@ -174,7 +174,6 @@ function getPastFilters(id) {
 function saveOriginalSelect(id) {
     let select = $("#" + id);
     if (select.data("originalSelect") === undefined) {
-        console.log("saved select");
         select.data("originalSelect", select.html());
     }
 }
@@ -186,9 +185,7 @@ function saveOriginalSelect(id) {
 function restoreOptions(id) {
     let select = $("#" + id);
     let ogSelect = select.data("originalSelect");
-    console.log("in restore");
     if (ogSelect !== undefined) {
-        console.log("restored");
         select.html(ogSelect);
     }
 }
@@ -199,7 +196,7 @@ function restoreOptions(id) {
  */
 function removeOptions(id) {
     let toKeep = "";
-    // Go through unselected tables, format and add to string
+    // Go through selected tables, format and add to string
     $(":checkbox:checked").each(function () {
         toKeep += "." + this.value + ", ";
     });
@@ -249,6 +246,8 @@ function clearFilters() {
     }
     // Reset numFltrs
     numFltrs = 0;
+    //
+    document.getElementById('fltrList0').getElementsByTagName("input")[0].value = "";
 }
 
 /**
@@ -267,6 +266,8 @@ function addFilter() {
     clone.getElementsByTagName("select")[0].id = "fltr" + numFltrs;
     // Give the input element inside the fltrList a unique ID
     clone.getElementsByTagName("input")[0].id = "fltrIn" + numFltrs;
+
+    clone.getElementsByTagName("select")[1].id = "comparisonOp" + numFltrs;
     // Clear text input so that the original filter's input isn't copied in subsequent filters
     clone.getElementsByTagName("input")[0].value = "";
     // Insert cloned filter after previous filter

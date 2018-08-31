@@ -29,7 +29,7 @@
                     Select tables to search over (select at least one table).
                 </p>
                 <div class="checkbox-group">
-                    <label><input type="checkbox" name="table" value="applications"> Applications</label> <br>
+                    <label> <input type="checkbox" name="table" value="applications"> Applications</label> <br>
                     <label> <input type="checkbox" name="table" value="awards"> Awards</label> <br>
                     <label> <input type="checkbox" name="table" value="enrollment"> Enrollment</label> <br>
                     <label> <input type="checkbox" name="table" value="graduation"> Graduation</label> <br>
@@ -97,7 +97,7 @@
                         <option value="firstSessionRegistered" class="student"> First Session Registered</option>
                     </select>
 
-                    <select name="comparisonOp" id="comparisonOp" title="Comparison Operator">
+                    <select name="comparisonOp" id="comparisonOp0" title="Comparison Operator">
                         <option value="="> =</option>
                         <option value=">"> ></option>
                         <option value=">="> ≥</option>

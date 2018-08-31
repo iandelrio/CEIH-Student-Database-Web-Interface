@@ -16,3 +16,33 @@ th, tr, td {
 tr:hover {
     background-color: #dcdcdc;
 }
+
+.content {
+    height: 100%;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /*background-color:black;*/
+    background-color: #404040;
+    color: white;
+    height: 50px;
+}
+
+.footer a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none!important;
+}
+
+.footer a:hover, .footer a:active {
+    background-color: darkslategray;
+    color: white;
+    text-decoration: none;
+}

@@ -4,7 +4,6 @@
 <!-- HTML and CSS for the header bar that navigates back to the home page. -->
 
 <head>
-    <title> Header </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
